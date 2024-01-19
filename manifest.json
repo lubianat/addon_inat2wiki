@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "iNaturalist to Wikimedia Commons",
-  "version": "1.0",
-  "permissions": ["activeTab", "storage", "https://api.inaturalist.org/"],
+  "version": "0.1.0",
+  "permissions": ["activeTab"],
   "content_scripts": [{
     "matches": ["*://www.inaturalist.org/observations/*"],
     "js": ["content.js"]
