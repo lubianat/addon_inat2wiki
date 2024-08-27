@@ -9,13 +9,16 @@ This Chrome extension adds a convenient button to iNaturalist observation pages,
 - Seamless redirection to the iNat2Wiki toolforge page for easy image uploading.
 
 ## Installation
+**NEWS:** The add-on is available on the [Chrome Extension store](https://chromewebstore.google.com/detail/inaturalist-to-wikimedia/bmcedhfhglnnfcjgbkgaaabcndkcnjnp)!
+
+For the dev version:
+
 1. **Clone the Repository**: Clone this repository to your local machine.
 2. **Load the Extension in Chrome**:
    - Open Chrome and go to `chrome://extensions/`.
    - Enable "Developer mode" at the top right.
    - Click "Load unpacked" and select the directory of the cloned repository.
 
-***To be added to Chrome extension store soon***
 
 ## Usage
 Navigate to any observation page on iNaturalist. You will see a blue button with white text labeled "Add it to Wikimedia Commons!" next to the species name. Clicking this button will open the iNat2Wiki tool in a new tab, pre-filled with the relevant information from the observation page.
