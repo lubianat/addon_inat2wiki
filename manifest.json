@@ -1,10 +1,33 @@
 {
   "manifest_version": 3,
   "name": "iNaturalist to Wikimedia Commons",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "permissions": ["activeTab"],
   "content_scripts": [{
-    "matches": ["*://www.inaturalist.org/observations/*"],
+    "matches": [
+      "*://www.inaturalist.org/observations/*",
+      "*://mexico.inaturalist.org/observations/*",
+      "*://inaturalist.nz/observations/*",
+      "*://inaturalist.ca/observations/*",
+      "*://colombia.inaturalist.org/observations/*",
+      "*://www.biodiversity4all.org/observations/*",
+      "*://inaturalist.ala.org.au/observations/*",
+      "*://panama.inaturalist.org/observations/*",
+      "*://ecuador.inaturalist.org/observations/*",
+      "*://israel.inaturalist.org/observations/*",
+      "*://www.argentinat.org/observations/*",
+      "*://costarica.inaturalist.org/observations/*",
+      "*://inaturalist.mma.gob.cl/observations/*",
+      "*://inaturalist.laji.fi/observations/*",
+      "*://www.inaturalist.se/observations/*",
+      "*://spain.inaturalist.org/observations/*",
+      "*://greece.inaturalist.org/observations/*",
+      "*://guatemala.inaturalist.org/observations/*",
+      "*://uk.inaturalist.org/observations/*",
+      "*://inaturalist.lu/observations/*",
+      "*://taiwan.inaturalist.org/observations/*",
+      "*://www.naturalista.uy/observations/*"
+    ],
     "js": ["content.js"]
   }],
   "action": {
