@@ -1,0 +1,23 @@
+---
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: Create zip file
+        run: zip -r my-extension.zip ./*
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: extension-zip
+          path: my-extension.zip
+name: Deploy Extension
+'on':
+  push:
+    paths:
+      - manifest.json
